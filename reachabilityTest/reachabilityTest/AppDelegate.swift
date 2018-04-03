@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  helloWorld
+//  reachabilityTest
 //
-//  Created by Haydee Rodriguez on 01/01/18.
-//  Copyright © 2018 haydeeTi. All rights reserved.
+//  Created by Haydee Rodriguez on 4/3/18.
+//  Copyright © 2018 Haydee Rodriguez. All rights reserved.
 //
 
 import UIKit

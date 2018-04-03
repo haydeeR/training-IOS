@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="743-Y3-JFP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="mtg-Jc-HqE">
+            <objects>
+                <viewController id="2Sj-nm-TEB" customClass="InitialViewController" customModule="reachabilityTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Q3-35-xRM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-test" translatesAutoresizingMaskIntoConstraints="NO" id="YDE-G7-Nv2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEST REACHABILITY" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJp-Tg-dEO">
+                                <rect key="frame" x="69" y="84" width="236.5" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YDE-G7-Nv2" firstAttribute="top" secondItem="5Q3-35-xRM" secondAttribute="top" id="2gM-YH-1Sq"/>
+                            <constraint firstItem="zIp-26-wM1" firstAttribute="bottom" secondItem="YDE-G7-Nv2" secondAttribute="bottom" id="3nz-K8-TQP"/>
+                            <constraint firstItem="BJp-Tg-dEO" firstAttribute="centerX" secondItem="5Q3-35-xRM" secondAttribute="centerX" id="Haj-vB-R6w"/>
+                            <constraint firstItem="YDE-G7-Nv2" firstAttribute="leading" secondItem="zIp-26-wM1" secondAttribute="leading" id="SS4-ta-gcj"/>
+                            <constraint firstItem="YDE-G7-Nv2" firstAttribute="trailing" secondItem="zIp-26-wM1" secondAttribute="trailing" id="pfJ-Dr-bVf"/>
+                            <constraint firstItem="BJp-Tg-dEO" firstAttribute="top" secondItem="zIp-26-wM1" secondAttribute="top" constant="20" id="yFZ-w2-dOG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zIp-26-wM1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p2H-mH-Ujl"/>
+                    <connections>
+                        <segue destination="DwJ-lF-fPa" kind="show" id="UIt-Ff-T3x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjm-H4-Ehf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="123.68815592203899"/>
+        </scene>
+        <!--Posts Table View Controller-->
+        <scene sceneID="iHk-5B-NTL">
+            <objects>
+                <tableViewController id="DwJ-lF-fPa" customClass="PostsTableViewController" customModule="reachabilityTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BGp-sD-ejk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" id="gG1-yG-O2d">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gG1-yG-O2d" id="RFa-Kd-7mh">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DwJ-lF-fPa" id="9Xp-oT-D7I"/>
+                            <outlet property="delegate" destination="DwJ-lF-fPa" id="Xz5-CJ-DJN"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ze2-yV-59c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1277.5999999999999" y="121.88905547226388"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ddt-8c-LYQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="743-Y3-JFP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vvs-v5-X16">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2Sj-nm-TEB" kind="relationship" relationship="rootViewController" id="oho-Tx-B6V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWv-RE-PM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-278" y="124"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img-test" width="199" height="213"/>
+    </resources>
+</document>
