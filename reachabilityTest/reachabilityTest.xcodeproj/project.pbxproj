@@ -15,6 +15,10 @@
 		9BC23F702073E2100046156C /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC23F6F2073E2100046156C /* ReachabilityManager.swift */; };
 		9BC23F722073F1490046156C /* OfflineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC23F712073F1490046156C /* OfflineViewController.swift */; };
 		9BC23F742073F1DB0046156C /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC23F732073F1DB0046156C /* PostTableViewController.swift */; };
+		9BC23F762073FC530046156C /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC23F752073FC530046156C /* Second.storyboard */; };
+		9BC23F782073FCA70046156C /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC23F772073FCA70046156C /* InitialViewController.swift */; };
+		9BC23F7B2073FD5A0046156C /* OfflineNibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC23F792073FD5A0046156C /* OfflineNibViewController.xib */; };
+		9BC23F7C2073FD5A0046156C /* OfflineNibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC23F7A2073FD5A0046156C /* OfflineNibViewController.swift */; };
 		F770E21C483A91526F0C13A2 /* Pods_reachabilityTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6337EB92247CB108A7CB281 /* Pods_reachabilityTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +35,10 @@
 		9BC23F6F2073E2100046156C /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		9BC23F712073F1490046156C /* OfflineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineViewController.swift; sourceTree = "<group>"; };
 		9BC23F732073F1DB0046156C /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
+		9BC23F752073FC530046156C /* Second.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Second.storyboard; sourceTree = "<group>"; };
+		9BC23F772073FCA70046156C /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		9BC23F792073FD5A0046156C /* OfflineNibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfflineNibViewController.xib; sourceTree = "<group>"; };
+		9BC23F7A2073FD5A0046156C /* OfflineNibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineNibViewController.swift; sourceTree = "<group>"; };
 		B6337EB92247CB108A7CB281 /* Pods_reachabilityTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_reachabilityTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,9 +87,13 @@
 				9BC23F6E2073E1E10046156C /* ErrorsHelper */,
 				9BC23F5C2073E0190046156C /* AppDelegate.swift */,
 				9BC23F732073F1DB0046156C /* PostTableViewController.swift */,
+				9BC23F792073FD5A0046156C /* OfflineNibViewController.xib */,
+				9BC23F7A2073FD5A0046156C /* OfflineNibViewController.swift */,
+				9BC23F772073FCA70046156C /* InitialViewController.swift */,
 				9BC23F712073F1490046156C /* OfflineViewController.swift */,
 				9BC23F5E2073E0190046156C /* LauncViewController.swift */,
 				9BC23F602073E0190046156C /* Main.storyboard */,
+				9BC23F752073FC530046156C /* Second.storyboard */,
 				9BC23F632073E0190046156C /* Assets.xcassets */,
 				9BC23F652073E0190046156C /* LaunchScreen.storyboard */,
 				9BC23F682073E0190046156C /* Info.plist */,
@@ -167,9 +179,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC23F762073FC530046156C /* Second.storyboard in Resources */,
 				9BC23F672073E0190046156C /* LaunchScreen.storyboard in Resources */,
 				9BC23F642073E0190046156C /* Assets.xcassets in Resources */,
 				9BC23F622073E0190046156C /* Main.storyboard in Resources */,
+				9BC23F7B2073FD5A0046156C /* OfflineNibViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,8 +253,10 @@
 				9BC23F742073F1DB0046156C /* PostTableViewController.swift in Sources */,
 				9BC23F722073F1490046156C /* OfflineViewController.swift in Sources */,
 				9BC23F5F2073E0190046156C /* LauncViewController.swift in Sources */,
+				9BC23F782073FCA70046156C /* InitialViewController.swift in Sources */,
 				9BC23F702073E2100046156C /* ReachabilityManager.swift in Sources */,
 				9BC23F5D2073E0190046156C /* AppDelegate.swift in Sources */,
+				9BC23F7C2073FD5A0046156C /* OfflineNibViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
