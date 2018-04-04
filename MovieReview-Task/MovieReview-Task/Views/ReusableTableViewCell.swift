@@ -36,3 +36,9 @@ class ReusableTableViewCell: UITableViewCell {
         releaseDate.text = movie.release_date
     }
 }
+
+extension UITableViewCell {
+    static var resusableID: String {
+        return String(describing: self)
+    }
+}

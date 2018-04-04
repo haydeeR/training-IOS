@@ -16,28 +16,25 @@ class MovieListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerNib()        
+        registerNib()
+        loadReviews()
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        fetchReviews { reviews in
-            self.moviesReviews = reviews
-            self.tableView.reloadData()
-        }
+        self.tableView.reloadData()
     }
     
     func registerNib(){
-        let nibCell = UINib(nibName: "ReusableCell", bundle: nil)
-        tableView.register(nibCell, forCellReuseIdentifier: "ReusableCell")
+        let nibCell = UINib(nibName: ReusableTableViewCell.resusableID, bundle: nil)
+        tableView.register(nibCell, forCellReuseIdentifier: ReusableTableViewCell.resusableID)
+        print(ReusableTableViewCell.resusableID)
     }
     
-    private func fetchReviews(completion: @escaping (_ reviews: [MovieReview]) -> Void) -> Void {
+    func loadReviews() {
         MovieHandler.getReviews(page: currentPage).done({
             movies in
             self.moviesReviews = movies
-            DispatchQueue.main.async {
-                completion(movies)
-            }
+            self.tableView.reloadData()
         })
     }
     
@@ -60,7 +57,7 @@ class MovieListTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! ReusableTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: ReusableTableViewCell.resusableID, for: indexPath) as! ReusableTableViewCell
         cell.fullCell(movie: moviesReviews[indexPath.row])
         return cell
     }
