@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  helloWorld
+//  memesView
 //
-//  Created by Haydee Rodriguez on 01/01/18.
+//  Created by Haydee Rodriguez on 18/01/18.
 //  Copyright © 2018 haydeeTi. All rights reserved.
 //
 
