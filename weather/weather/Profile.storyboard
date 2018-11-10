@@ -24,13 +24,13 @@
                                 <rect key="frame" x="0.0" y="20.000000000000014" width="414" height="245.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5D-dD-Nlf">
-                                        <rect key="frame" x="169" y="100" width="76" height="45.333333333333343"/>
+                                        <rect key="frame" x="169.33333333333334" y="99.666666666666671" width="76" height="45.666666666666671"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVk-VP-Y8a">
-                                        <rect key="frame" x="30" y="170" width="138" height="122.66666666666669"/>
+                                        <rect key="frame" x="30" y="169.66666666666666" width="138" height="122.99999999999997"/>
                                         <color key="backgroundColor" red="0.84431604892589551" green="0.99253647734870987" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="fVk-VP-Y8a" secondAttribute="height" multiplier="10:9" id="o5S-3b-d0e"/>
