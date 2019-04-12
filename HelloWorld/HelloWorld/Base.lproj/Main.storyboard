@@ -1,66 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Medium</string>
+        </array>
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Hello World View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HelloWorldViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="helloWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.65000000000000002" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSU-d2-J3Q">
-                                <rect key="frame" x="141" y="484" width="92" height="40"/>
-                                <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="20"/>
-                                <state key="normal" title="Push Me!"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nC-Hq-SMW">
+                                <rect key="frame" x="148" y="472" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="19"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Hello!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.7793511581" green="0.6532261841" blue="0.9975931187" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="sayHelloAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qcx-br-KtJ"/>
+                                    <action selector="helloAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OzW-Sh-oKJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XW-J8-ubl">
-                                <rect key="frame" x="187.5" y="334" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" red="0.073122949919999999" green="0.32416000160000003" blue="0.78813147670000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Saludo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="qeG-F1-CKz">
+                                <rect key="frame" x="16" y="394" width="343" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="18"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ns-N6-Q6e">
-                                <rect key="frame" x="50" y="120" width="275" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dragon-1597583_1280" translatesAutoresizingMaskIntoConstraints="NO" id="ew9-Fw-Cto">
+                                <rect key="frame" x="16" y="73" width="343" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="your name" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="PJJ-og-fOm">
+                                <rect key="frame" x="16" y="356" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.84914839363446482" green="0.89645401554404147" blue="0.40440471072809298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="4Ns-N6-Q6e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Dm6-da-bZo"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BSU-d2-J3Q" secondAttribute="bottom" constant="120" id="LMx-D0-8x4"/>
-                            <constraint firstItem="5XW-J8-ubl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oou-le-KXm"/>
-                            <constraint firstItem="4Ns-N6-Q6e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dK9-Tb-8ct"/>
-                            <constraint firstItem="4Ns-N6-Q6e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="dRE-w6-O2W"/>
-                            <constraint firstItem="BSU-d2-J3Q" firstAttribute="top" secondItem="5XW-J8-ubl" secondAttribute="top" constant="150" id="ilr-R4-aw9"/>
-                            <constraint firstItem="BSU-d2-J3Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pr0-3o-W2r"/>
-                            <constraint firstItem="5XW-J8-ubl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yoJ-eC-QRD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Ns-N6-Q6e" secondAttribute="trailing" constant="50" id="zvl-oo-LeT"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.7793511581" green="0.6532261841" blue="0.9975931187" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.7793511581" green="0.6532261841" blue="0.9975931187" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="helloLabel" destination="5XW-J8-ubl" id="4Nx-Cp-Ohe"/>
-                        <outlet property="textFieldName" destination="4Ns-N6-Q6e" id="ecV-Km-YyZ"/>
+                        <outlet property="greetingLabel" destination="qeG-F1-CKz" id="GQ9-VC-WN2"/>
+                        <outlet property="userNameTextField" destination="PJJ-og-fOm" id="GZ0-sR-Mxe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dragon-1597583_1280" width="426" height="415"/>
+    </resources>
 </document>
